@@ -1,38 +1,53 @@
-# 📌 Resumen Técnico – Juego “Impostor Fútbol”
+📌 Resumen Técnico – Juego “Impostor Fútbol”
+🎮 Concepto del Juego
 
-## 🎮 Concepto del Juego
-- Variante del juego “impostor”, pero con **jugadores/equipos de fútbol**.  
-- Participan varios jugadores en una sala.  
-- A todos se les asigna un jugador/equipo, excepto al impostor que no recibe información.  
+Variante del juego “impostor”, pero con jugadores/equipos de fútbol.
 
-### En cada ronda:
-1. Los jugadores dicen una palabra relacionada con su asignación.  
-2. Se vota quién parece ser el impostor.  
-3. Se elimina un jugador y se revisan condiciones de victoria.  
+Participan varios jugadores en una sala.
 
-### Modos de juego:
-- **Online** → las palabras se escriben en la app.  
-- **Presencial** → las palabras se dicen en persona, pero la votación se hace en la app.  
+A todos se les asigna un jugador/equipo, excepto al impostor que no recibe información.
 
----
+En cada ronda:
 
-## 🏗️ Arquitectura General
-- **Frontend**: React + TailwindCSS (UI rápida y limpia).  
-- **Backend**: Node.js + Express + Socket.IO (para tiempo real).  
-- **Base de datos (mínima)**: MySQL + Sequelize (solo lista de jugadores/equipos).  
-- **Estado de las partidas**: en memoria (se borra al terminar la sala).  
+Los jugadores dicen una palabra relacionada con su asignación.
 
----
+Se vota quién parece ser el impostor.
 
-## 📊 Base de Datos
-- Solo se guarda la lista de opciones de asignación (jugadores/equipos).  
-- El backend selecciona uno al azar para asignar a los jugadores.  
+Se elimina un jugador y se revisan condiciones de victoria.
 
----
+Dos modos de juego en la misma app:
 
-## 🧠 Backend – Lógica
-### Estructura de una sala en memoria
-```js
+Online → las palabras se escriben en la app.
+
+Presencial → las palabras se dicen en persona, pero la votación se hace en la app.
+
+🏗️ Arquitectura General
+
+Frontend: React + TailwindCSS (UI rápida y limpia).
+
+Backend: Node.js + Express + Socket.IO (para tiempo real).
+
+Base de datos (mínima): MySQL + Sequelize (solo lista de jugadores/equipos).
+
+Estado de las partidas: en memoria (se borra al terminar la sala).
+
+📊 Base de Datos (mínima)
+
+Solo se guarda la lista de opciones de asignación:
+
+CREATE TABLE Entities (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  name VARCHAR(255) NOT NULL,
+  type ENUM('player', 'team') NOT NULL
+);
+
+
+Ejemplo de datos: "Messi", "Boca Juniors", "Cristiano Ronaldo".
+
+El backend toma al azar una opción para asignar.
+
+🧠 Backend – Lógica
+Estructura de una sala en memoria
 {
   code: "ABC123",
   state: "lobby", // lobby | assigning | words | voting | results | finished
@@ -49,7 +64,9 @@
     ...
   ]
 }
+
 Endpoints principales
+
 POST /room → crear sala (genera código único).
 
 POST /room/:code/join → unirse con nickname + modo.
@@ -57,6 +74,7 @@ POST /room/:code/join → unirse con nickname + modo.
 POST /room/:code/start → asigna roles + jugador/equipo.
 
 Eventos Socket.IO
+
 playerJoined → un jugador entra al lobby.
 
 rolesAssigned → notifica a cada jugador su rol.
@@ -72,6 +90,7 @@ roundResult → resultado de la votación (quién fue eliminado).
 gameOver → mensaje de fin de partida (ganadores).
 
 🎨 Frontend – Pantallas
+
 Inicio → nickname + código de sala.
 
 Selector de modo → elegir “Online” o “Presencial”.
@@ -80,9 +99,9 @@ Lobby → lista de jugadores conectados.
 
 Asignación →
 
-Jugador → muestra el jugador/equipo.
+Si sos jugador → muestra el jugador/equipo.
 
-Impostor → cartel “sos el impostor”.
+Si sos impostor → cartel “sos el impostor”.
 
 Juego:
 
@@ -97,6 +116,7 @@ Resultado → quién fue eliminado y estado del juego.
 Fin del juego → muestra ganadores (impostores o jugadores).
 
 🔄 Flujo de una partida
+
 Lobby → jugadores se conectan y el host inicia.
 
 Asignación → backend reparte roles.
@@ -122,6 +142,7 @@ Si no, iniciar siguiente ronda.
 Fin → pantalla con ganadores.
 
 🚀 Extras a futuro
+
 Ranking de victorias/derrotas (requiere DB).
 
 Chat integrado (para modo online).
