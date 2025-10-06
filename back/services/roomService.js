@@ -106,6 +106,14 @@ function readyAndNextTurn(roomName, nickname) {
   if (room.mode !== "presencial") throw new Error("Solo disponible en modo presencial");
 
   let currentPlayer = room.turnOrder[room.turnIndex];
+  // Si el jugador actual está eliminado, avanzar turno automáticamente
+  while (
+    room.turnIndex < room.turnOrder.length &&
+    room.words[currentPlayer] && room.words[currentPlayer].includes("ELIMINADO")
+  ) {
+    room.turnIndex++;
+    currentPlayer = room.turnOrder[room.turnIndex];
+  }
   if (nickname !== currentPlayer) throw new Error("No es tu turno");
 
   room.readyPlayers[nickname] = true;
@@ -231,10 +239,11 @@ function endVotingAndNextRound(room) {
     // Reiniciar ronda
     room.turnIndex = 0;
     room.votes = {};
-    room.eliminated = null;
+    // room.eliminated NO se resetea aquí, para que el frontend lo muestre
     room.readyPlayers = {};
     room.gameOver = false;
     room.impostorWin = false;
+    room.votingStart = Date.now(); // Nuevo timestamp de inicio de votación
   } else {
     room.gameOver = true;
     room.impostorWin = impostorWin;

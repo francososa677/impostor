@@ -102,8 +102,9 @@ router.post("/:roomName/vote", (req, res) => {
 
     room.votes[voter] = voted;
 
-    // Si todos votaron, calcular eliminado
-    if (Object.keys(room.votes).length === room.players.length) {
+    // Si todos los jugadores vivos votaron, calcular eliminado
+    const alivePlayers = room.players.filter(p => !(room.words && room.words[p] && room.words[p].includes("ELIMINADO")));
+    if (Object.keys(room.votes).length === alivePlayers.length) {
       endVotingAndNextRound(room);
     }
 
