@@ -49,7 +49,21 @@ function createRoom({ roomName, password, maxPlayers, impostors, turnTime, mode,
 // Avanzar turno en modo online con temporizador
 function nextTurn(room) {
   clearTimeout(room.turnTimeout);
-  room.turnIndex++;
+  // Avanzar al siguiente jugador no eliminado
+  do {
+    room.turnIndex++;
+    const currentPlayer = room.turnOrder[room.turnIndex];
+    if (
+      room.turnIndex < room.turnOrder.length &&
+      room.words[currentPlayer] && room.words[currentPlayer].includes("ELIMINADO")
+    ) {
+      // Saltar eliminados
+      continue;
+    } else {
+      break;
+    }
+  } while (room.turnIndex < room.turnOrder.length);
+
   if (room.turnIndex < room.turnOrder.length) {
     room.turnTimeout = setTimeout(() => {
       const missedPlayer = room.turnOrder[room.turnIndex];
@@ -236,8 +250,22 @@ function endVotingAndNextRound(room) {
   if (aliveImpostors.length === 0) gameOver = true;
 
   if (!gameOver) {
-    // Reiniciar ronda
+    // Verificar si el impostor fue eliminado en esta ronda
+    const impostorEliminado = room.eliminated && room.roles[room.eliminated] === "impostor";
+    if (impostorEliminado) {
+      room.gameOver = true;
+      room.impostorWin = false;
+      return room;
+    }
+    // Reiniciar ronda y saltar eliminados al inicio
     room.turnIndex = 0;
+    // Saltar eliminados al principio de la ronda
+    while (
+      room.turnIndex < room.turnOrder.length &&
+      room.words[room.turnOrder[room.turnIndex]] && room.words[room.turnOrder[room.turnIndex]].includes("ELIMINADO")
+    ) {
+      room.turnIndex++;
+    }
     room.votes = {};
     // room.eliminated NO se resetea aquí, para que el frontend lo muestre
     room.readyPlayers = {};

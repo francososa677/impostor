@@ -46,25 +46,20 @@ export default function Game({ roomName, nickname }) {
 
   // Actualiza el temporizador visual cada segundo
   useEffect(() => {
-    if (!room) return;
-    // Solo mostrar si la partida está iniciada
-    if (!room.started) return;
-    // Calcular tiempo restante
-    const turnStart = room.words && room.words[room.turnOrder[room.turnIndex]] ? null : Date.now();
-    let timeout = null;
-    if (room.turnTimeout && room.turnTime && room.turnOrder) {
-      // Estimación visual: solo muestra el tiempo configurado
-      let seconds = room.turnTime;
-      setTimer(seconds);
-      timeout = setInterval(() => {
-        seconds--;
-        setTimer(seconds);
-        if (seconds <= 0) clearInterval(timeout);
-      }, 1000);
-    } else {
+    if (!room || !room.started || room.mode !== "online") return;
+    // No timer for eliminated players
+    if (room.words && room.words[room.turnOrder[room.turnIndex]] && room.words[room.turnOrder[room.turnIndex]].includes("ELIMINADO")) {
       setTimer(null);
+      return;
     }
-    return () => timeout && clearInterval(timeout);
+    let seconds = room.turnTime;
+    setTimer(seconds);
+    let timeout = setInterval(() => {
+      seconds--;
+      setTimer(seconds);
+      if (seconds <= 0) clearInterval(timeout);
+    }, 1000);
+    return () => clearInterval(timeout);
   }, [room]);
 
   if (!room) return <p>Cargando partida...</p>;
@@ -113,8 +108,8 @@ export default function Game({ roomName, nickname }) {
         <p className="mb-4 text-red-600 font-bold">¡Sos impostor!</p>
       )}
 
-      {/* Input y timer solo si es online */}
-      {room.mode === "online" && room.turnOrder[room.turnIndex] === nickname && (
+      {/* Input y timer solo si es online y el jugador no está eliminado */}
+      {room.mode === "online" && room.turnOrder[room.turnIndex] === nickname && !(room.words && room.words[nickname] && room.words[nickname].includes("ELIMINADO")) && (
         <>
           <form onSubmit={handleWord} className="mb-6">
             <input type="text" name="word" className="p-2 border rounded mr-2" required />
@@ -174,7 +169,14 @@ export default function Game({ roomName, nickname }) {
       )}
 
       {/* Mostrar Voting si todos escribieron palabra o están listos */}
-      {room.turnOrder && room.turnOrder.every(p => (room.words[p]?.length > 0 || room.readyPlayers?.[p])) && (
+      {/* Mostrar Voting solo si todos los jugadores vivos han escrito su palabra o están listos */}
+      {/* Mostrar Voting solo si todos los jugadores vivos han escrito su palabra o están listos, y solo si no estamos en la fase de escritura (online) */}
+      {room.turnOrder &&
+        room.turnOrder
+          .filter(p => !(room.words[p]?.includes("ELIMINADO")))
+          .every(p => (room.words[p]?.length > 0 || room.readyPlayers?.[p])) &&
+        // En online, solo mostrar Voting si no hay ningún turno pendiente de palabra
+        ((room.mode === "online" && room.turnIndex >= room.turnOrder.length) || room.mode === "presencial") && (
         <Voting
           room={room}
           nickname={nickname}
