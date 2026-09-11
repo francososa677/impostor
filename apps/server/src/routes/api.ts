@@ -1,10 +1,10 @@
-import { Router } from "express";
+import { Router, Request, Response } from "express";
 import { WordDataLoader } from "../store/data-loader.js";
 import { globalRoomStore } from "../store/room-store.js";
 
 export const apiRouter = Router();
 
-apiRouter.get("/health", (req, res) => {
+apiRouter.get("/health", (_req: Request, res: Response) => {
   res.json({
     status: "ok",
     timestamp: Date.now(),
@@ -13,17 +13,17 @@ apiRouter.get("/health", (req, res) => {
   });
 });
 
-apiRouter.get("/api/categories", (req, res) => {
+apiRouter.get("/api/categories", (_req: Request, res: Response) => {
   const categories = WordDataLoader.getCategoriesMeta();
   res.json({ categories });
 });
 
-apiRouter.get("/api/rooms", (req, res) => {
+apiRouter.get("/api/rooms", (_req: Request, res: Response) => {
   const publicRooms = globalRoomStore.listPublicRooms();
   res.json({ rooms: publicRooms });
 });
 
-apiRouter.get("/api/rooms/:code", (req, res) => {
+apiRouter.get("/api/rooms/:code", (req: Request, res: Response) => {
   const room = globalRoomStore.getRoomByCode(req.params.code);
   if (!room) {
     return res.status(404).json({ error: "Sala no encontrada" });

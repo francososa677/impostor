@@ -2,7 +2,7 @@ import http from "node:http";
 import path from "node:path";
 import fs from "node:fs";
 import { fileURLToPath } from "node:url";
-import express from "express";
+import express, { Request, Response, NextFunction } from "express";
 import { Server } from "socket.io";
 import helmet from "helmet";
 import cors from "cors";
@@ -56,7 +56,7 @@ app.use(apiRouter);
 // Serve static frontend build in production if available
 if (fs.existsSync(webDistPath)) {
   app.use(express.static(webDistPath));
-  app.get("*", (req, res, next) => {
+  app.get("*", (req: Request, res: Response, next: NextFunction) => {
     if (req.path.startsWith("/api") || req.path.startsWith("/socket.io")) {
       return next();
     }
