@@ -10,9 +10,7 @@
   },
   "dependencies": {
     "@impostor/shared": "*",
+    "typescript": "^5.3.3",
     "zod": "^3.22.4"
-  },
-  "devDependencies": {
-    "typescript": "^5.3.3"
   }
 }
