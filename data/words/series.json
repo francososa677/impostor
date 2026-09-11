@@ -1,0 +1,142 @@
+[
+  {
+    "word": "Breaking Bad",
+    "category": "Series",
+    "contextClue": "Albuquerque"
+  },
+  {
+    "word": "Game of Thrones",
+    "category": "Series",
+    "contextClue": "Trono de hierro"
+  },
+  {
+    "word": "Stranger Things",
+    "category": "Series",
+    "contextClue": "Hawkins"
+  },
+  {
+    "word": "The Walking Dead",
+    "category": "Series",
+    "contextClue": "Caminantes"
+  },
+  {
+    "word": "Los Soprano",
+    "category": "Series",
+    "contextClue": "Nueva Jersey"
+  },
+  {
+    "word": "Peaky Blinders",
+    "category": "Series",
+    "contextClue": "Gorra con navajas"
+  },
+  {
+    "word": "Vikings",
+    "category": "Series",
+    "contextClue": "Kattegat"
+  },
+  {
+    "word": "The Boys",
+    "category": "Series",
+    "contextClue": "Compuesto V"
+  },
+  {
+    "word": "Dark",
+    "category": "Series",
+    "contextClue": "Winden"
+  },
+  {
+    "word": "Black Mirror",
+    "category": "Series",
+    "contextClue": "Pantalla apagada"
+  },
+  {
+    "word": "Chernobyl",
+    "category": "Series",
+    "contextClue": "Pripyat"
+  },
+  {
+    "word": "La Casa de Papel",
+    "category": "Series",
+    "contextClue": "Máscara de Dalí"
+  },
+  {
+    "word": "El Marginal",
+    "category": "Series",
+    "contextClue": "San Onofre"
+  },
+  {
+    "word": "Okupas",
+    "category": "Series",
+    "contextClue": "Dock Sud"
+  },
+  {
+    "word": "Los Simuladores",
+    "category": "Series",
+    "contextClue": "Operativo con habano"
+  },
+  {
+    "word": "El Encargado",
+    "category": "Series",
+    "contextClue": "Terraza del edificio"
+  },
+  {
+    "word": "Friends",
+    "category": "Series",
+    "contextClue": "Sillón naranja"
+  },
+  {
+    "word": "The Office",
+    "category": "Series",
+    "contextClue": "Scranton"
+  },
+  {
+    "word": "The Big Bang Theory",
+    "category": "Series",
+    "contextClue": "Lugar en el sofá"
+  },
+  {
+    "word": "Lost",
+    "category": "Series",
+    "contextClue": "Vuelo Oceanic 815"
+  },
+  {
+    "word": "The Last of Us",
+    "category": "Series",
+    "contextClue": "Cordyceps"
+  },
+  {
+    "word": "Squid Game",
+    "category": "Series",
+    "contextClue": "Muñeca gigante"
+  },
+  {
+    "word": "The Bear",
+    "category": "Series",
+    "contextClue": "¡Sí, Chef!"
+  },
+  {
+    "word": "Rick and Morty",
+    "category": "Series",
+    "contextClue": "Pistola de portales"
+  },
+  {
+    "word": "Los Simpson",
+    "category": "Series",
+    "contextClue": "Avenida Siempreviva"
+  },
+  {
+    "word": "Dragon Ball Z",
+    "category": "Series",
+    "contextClue": "Siete esferas"
+  },
+  {
+    "word": "Naruto",
+    "category": "Series",
+    "contextClue": "Aldea de la Hoja"
+  },
+  {
+    "word": "One Piece",
+    "category": "Series",
+    "contextClue": "Sombrero de paja"
+  }
+]

@@ -1,0 +1,147 @@
+[
+  {
+    "word": "Grand Theft Auto V",
+    "category": "Videojuegos",
+    "contextClue": "Los Santos"
+  },
+  {
+    "word": "The Legend of Zelda",
+    "category": "Videojuegos",
+    "contextClue": "Hyrule"
+  },
+  {
+    "word": "Super Mario Bros",
+    "category": "Videojuegos",
+    "contextClue": "Reino Champiñón"
+  },
+  {
+    "word": "Minecraft",
+    "category": "Videojuegos",
+    "contextClue": "Bloques cúbicos"
+  },
+  {
+    "word": "Counter-Strike",
+    "category": "Videojuegos",
+    "contextClue": "Plantar la bomba"
+  },
+  {
+    "word": "League of Legends",
+    "category": "Videojuegos",
+    "contextClue": "Grieta del Invocador"
+  },
+  {
+    "word": "Valorant",
+    "category": "Videojuegos",
+    "contextClue": "Radiantita"
+  },
+  {
+    "word": "Fortnite",
+    "category": "Videojuegos",
+    "contextClue": "Autobús volador"
+  },
+  {
+    "word": "Call of Duty",
+    "category": "Videojuegos",
+    "contextClue": "Racha de bajas"
+  },
+  {
+    "word": "Dark Souls",
+    "category": "Videojuegos",
+    "contextClue": "Hogueras"
+  },
+  {
+    "word": "Elden Ring",
+    "category": "Videojuegos",
+    "contextClue": "Tierras Intermedias"
+  },
+  {
+    "word": "God of War",
+    "category": "Videojuegos",
+    "contextClue": "Hacha Leviatán"
+  },
+  {
+    "word": "Red Dead Redemption 2",
+    "category": "Videojuegos",
+    "contextClue": "Banda de Dutch"
+  },
+  {
+    "word": "The Witcher 3",
+    "category": "Videojuegos",
+    "contextClue": "Caza salvaje"
+  },
+  {
+    "word": "Skyrim",
+    "category": "Videojuegos",
+    "contextClue": "Dovahkiin"
+  },
+  {
+    "word": "Cyberpunk 2077",
+    "category": "Videojuegos",
+    "contextClue": "Night City"
+  },
+  {
+    "word": "Overwatch",
+    "category": "Videojuegos",
+    "contextClue": "Carga del payload"
+  },
+  {
+    "word": "Rocket League",
+    "category": "Videojuegos",
+    "contextClue": "Autos con turbo"
+  },
+  {
+    "word": "World of Warcraft",
+    "category": "Videojuegos",
+    "contextClue": "Azeroth"
+  },
+  {
+    "word": "Diablo",
+    "category": "Videojuegos",
+    "contextClue": "Santuario"
+  },
+  {
+    "word": "Age of Empires",
+    "category": "Videojuegos",
+    "contextClue": "Wololo"
+  },
+  {
+    "word": "The Sims",
+    "category": "Videojuegos",
+    "contextClue": "Plumbob verde"
+  },
+  {
+    "word": "Resident Evil",
+    "category": "Videojuegos",
+    "contextClue": "Raccoon City"
+  },
+  {
+    "word": "Half-Life",
+    "category": "Videojuegos",
+    "contextClue": "Palanca de hierro"
+  },
+  {
+    "word": "Portal",
+    "category": "Videojuegos",
+    "contextClue": "El pastel es una mentira"
+  },
+  {
+    "word": "Halo",
+    "category": "Videojuegos",
+    "contextClue": "Master Chief"
+  },
+  {
+    "word": "Uncharted",
+    "category": "Videojuegos",
+    "contextClue": "El Dorado"
+  },
+  {
+    "word": "Hollow Knight",
+    "category": "Videojuegos",
+    "contextClue": "Hallownest"
+  },
+  {
+    "word": "Among Us",
+    "category": "Videojuegos",
+    "contextClue": "Nave The Skeld"
+  }
+]

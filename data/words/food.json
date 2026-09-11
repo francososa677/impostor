@@ -1,0 +1,257 @@
+[
+  {
+    "word": "Pizza",
+    "category": "Comida",
+    "contextClue": "Horno"
+  },
+  {
+    "word": "Hamburguesa",
+    "category": "Comida",
+    "contextClue": "Parrilla"
+  },
+  {
+    "word": "Sushi",
+    "category": "Comida",
+    "contextClue": "Arroz y alga"
+  },
+  {
+    "word": "Tacos",
+    "category": "Comida",
+    "contextClue": "Tortilla"
+  },
+  {
+    "word": "Empanada",
+    "category": "Comida",
+    "contextClue": "Repulgue"
+  },
+  {
+    "word": "Asado",
+    "category": "Comida",
+    "contextClue": "Brasas"
+  },
+  {
+    "word": "Milanesa",
+    "category": "Comida",
+    "contextClue": "Pan rallado"
+  },
+  {
+    "word": "Lasaña",
+    "category": "Comida",
+    "contextClue": "Capas"
+  },
+  {
+    "word": "Paella",
+    "category": "Comida",
+    "contextClue": "Azafrán"
+  },
+  {
+    "word": "Ceviche",
+    "category": "Comida",
+    "contextClue": "Limón"
+  },
+  {
+    "word": "Ramen",
+    "category": "Comida",
+    "contextClue": "Caldo"
+  },
+  {
+    "word": "Pad Thai",
+    "category": "Comida",
+    "contextClue": "Maní"
+  },
+  {
+    "word": "Falafel",
+    "category": "Comida",
+    "contextClue": "Garbanzos"
+  },
+  {
+    "word": "Hummus",
+    "category": "Comida",
+    "contextClue": "Pasta"
+  },
+  {
+    "word": "Shawarma",
+    "category": "Comida",
+    "contextClue": "Espiedo"
+  },
+  {
+    "word": "Burrito",
+    "category": "Comida",
+    "contextClue": "Frijoles"
+  },
+  {
+    "word": "Quesadilla",
+    "category": "Comida",
+    "contextClue": "Fundido"
+  },
+  {
+    "word": "Arepa",
+    "category": "Comida",
+    "contextClue": "Maíz"
+  },
+  {
+    "word": "Croissant",
+    "category": "Comida",
+    "contextClue": "Hojaldre"
+  },
+  {
+    "word": "Bagel",
+    "category": "Comida",
+    "contextClue": "Semillas"
+  },
+  {
+    "word": "Choripán",
+    "category": "Comida",
+    "contextClue": "Chimichurri"
+  },
+  {
+    "word": "Locro",
+    "category": "Comida",
+    "contextClue": "Zapallo"
+  },
+  {
+    "word": "Guiso",
+    "category": "Comida",
+    "contextClue": "Olla caliente"
+  },
+  {
+    "word": "Sopa de verduras",
+    "category": "Comida",
+    "contextClue": "Cuchara"
+  },
+  {
+    "word": "Papas fritas",
+    "category": "Comida",
+    "contextClue": "Aceite"
+  },
+  {
+    "word": "Tortilla de papas",
+    "category": "Comida",
+    "contextClue": "Huevo"
+  },
+  {
+    "word": "Ravioles",
+    "category": "Comida",
+    "contextClue": "Relleno"
+  },
+  {
+    "word": "Ñoquis",
+    "category": "Comida",
+    "contextClue": "Día 29"
+  },
+  {
+    "word": "Canelones",
+    "category": "Comida",
+    "contextClue": "Salsa mixta"
+  },
+  {
+    "word": "Risotto",
+    "category": "Comida",
+    "contextClue": "Cremoso"
+  },
+  {
+    "word": "Fondue",
+    "category": "Comida",
+    "contextClue": "Queso derretido"
+  },
+  {
+    "word": "Tiramisú",
+    "category": "Comida",
+    "contextClue": "Café"
+  },
+  {
+    "word": "Flan",
+    "category": "Comida",
+    "contextClue": "Caramelo"
+  },
+  {
+    "word": "Helado",
+    "category": "Comida",
+    "contextClue": "Cucurucho"
+  },
+  {
+    "word": "Churros",
+    "category": "Comida",
+    "contextClue": "Dulce de leche"
+  },
+  {
+    "word": "Donas",
+    "category": "Comida",
+    "contextClue": "Glaseado"
+  },
+  {
+    "word": "Brownie",
+    "category": "Comida",
+    "contextClue": "Nueces"
+  },
+  {
+    "word": "Cheesecake",
+    "category": "Comida",
+    "contextClue": "Frutos rojos"
+  },
+  {
+    "word": "Panqueques",
+    "category": "Comida",
+    "contextClue": "Miel"
+  },
+  {
+    "word": "Waffles",
+    "category": "Comida",
+    "contextClue": "Cuadriculado"
+  },
+  {
+    "word": "Alfajor",
+    "category": "Comida",
+    "contextClue": "Tapa doble"
+  },
+  {
+    "word": "Tarta de manzana",
+    "category": "Comida",
+    "contextClue": "Canela"
+  },
+  {
+    "word": "Lemon Pie",
+    "category": "Comida",
+    "contextClue": "Merengue"
+  },
+  {
+    "word": "Medialunas",
+    "category": "Comida",
+    "contextClue": "Manteca"
+  },
+  {
+    "word": "Guacamole",
+    "category": "Comida",
+    "contextClue": "Palta"
+  },
+  {
+    "word": "Gyoza",
+    "category": "Comida",
+    "contextClue": "Vapor y sartén"
+  },
+  {
+    "word": "Curry",
+    "category": "Comida",
+    "contextClue": "Especias"
+  },
+  {
+    "word": "Provoleta",
+    "category": "Comida",
+    "contextClue": "Orégano"
+  },
+  {
+    "word": "Molleja",
+    "category": "Comida",
+    "contextClue": "Limón asado"
+  },
+  {
+    "word": "Cerveza",
+    "category": "Comida",
+    "contextClue": "Lúpulo"
+  },
+  {
+    "word": "Fernet con coca",
+    "category": "Comida",
+    "contextClue": "Hielo y espuma"
+  }
+]

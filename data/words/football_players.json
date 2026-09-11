@@ -1,0 +1,1582 @@
+[
+  {
+    "word": "Lionel Messi",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Rosario"
+  },
+  {
+    "word": "Diego Maradona",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Villa Fiorito"
+  },
+  {
+    "word": "Ángel Di María",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Perdriel"
+  },
+  {
+    "word": "Julián Álvarez",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Calchín"
+  },
+  {
+    "word": "Lautaro Martínez",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Bahía Blanca"
+  },
+  {
+    "word": "Rodrigo De Paul",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Sarandí"
+  },
+  {
+    "word": "Enzo Fernández",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "San Martín"
+  },
+  {
+    "word": "Alexis Mac Allister",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Santa Rosa"
+  },
+  {
+    "word": "Emiliano Martínez",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Mar del Plata"
+  },
+  {
+    "word": "Cristian Romero",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Córdoba"
+  },
+  {
+    "word": "Nicolás Otamendi",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "El Talar"
+  },
+  {
+    "word": "Nahuel Molina",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Embalse"
+  },
+  {
+    "word": "Nicolás Tagliafico",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Rafael Calzada"
+  },
+  {
+    "word": "Leandro Paredes",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "San Justo"
+  },
+  {
+    "word": "Giovani Lo Celso",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Rosario"
+  },
+  {
+    "word": "Paulo Dybala",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Laguna Larga"
+  },
+  {
+    "word": "Alejandro Garnacho",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Madrid"
+  },
+  {
+    "word": "Lisandro Martínez",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Gualeguay"
+  },
+  {
+    "word": "Gonzalo Montiel",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Virrey del Pino"
+  },
+  {
+    "word": "Marcos Acuña",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Zapala"
+  },
+  {
+    "word": "Franco Armani",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Casilda"
+  },
+  {
+    "word": "Gerónimo Rulli",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "La Plata"
+  },
+  {
+    "word": "Juan Román Riquelme",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Don Torcuato"
+  },
+  {
+    "word": "Carlos Tevez",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Fuerte Apache"
+  },
+  {
+    "word": "Kun Agüero",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Quilmes"
+  },
+  {
+    "word": "Gonzalo Higuaín",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Brest"
+  },
+  {
+    "word": "Javier Mascherano",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "San Lorenzo"
+  },
+  {
+    "word": "Pablo Aimar",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Río Cuarto"
+  },
+  {
+    "word": "Hernán Crespo",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Florida"
+  },
+  {
+    "word": "Gabriel Batistuta",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Reconquista"
+  },
+  {
+    "word": "Claudio Caniggia",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Henderson"
+  },
+  {
+    "word": "Martín Palermo",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "La Plata"
+  },
+  {
+    "word": "Juan Sebastián Verón",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "La Plata"
+  },
+  {
+    "word": "Esteban Cambiasso",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Buenos Aires"
+  },
+  {
+    "word": "Javier Zanetti",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Dock Sud"
+  },
+  {
+    "word": "Roberto Ayala",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Paraná"
+  },
+  {
+    "word": "Walter Samuel",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Laborde"
+  },
+  {
+    "word": "Fernando Redondo",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Adrogué"
+  },
+  {
+    "word": "Diego Simeone",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Buenos Aires"
+  },
+  {
+    "word": "Marcelo Gallardo",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Merlo"
+  },
+  {
+    "word": "Ariel Ortega",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Ledesma"
+  },
+  {
+    "word": "Claudio Borghi",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Castelar"
+  },
+  {
+    "word": "Jorge Valdano",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Las Parejas"
+  },
+  {
+    "word": "Mario Kempes",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Bell Ville"
+  },
+  {
+    "word": "Ubaldo Fillol",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "San Miguel del Monte"
+  },
+  {
+    "word": "Daniel Passarella",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Chacabuco"
+  },
+  {
+    "word": "Ricardo Bochini",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Zárate"
+  },
+  {
+    "word": "Norberto Alonso",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Vicente López"
+  },
+  {
+    "word": "Amadeo Carrizo",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Rufino"
+  },
+  {
+    "word": "Ángel Labruna",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Buenos Aires"
+  },
+  {
+    "word": "Alfredo Di Stéfano",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Barracas"
+  },
+  {
+    "word": "Mauro Icardi",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Rosario"
+  },
+  {
+    "word": "Ezequiel Lavezzi",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Villa Gobernador Gálvez"
+  },
+  {
+    "word": "Lucas Biglia",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Mercedes"
+  },
+  {
+    "word": "Ever Banega",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Rosario"
+  },
+  {
+    "word": "Maxi Rodríguez",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Rosario"
+  },
+  {
+    "word": "Gabriel Milito",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Bernal"
+  },
+  {
+    "word": "Diego Milito",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Bernal"
+  },
+  {
+    "word": "Fabricio Coloccini",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Córdoba"
+  },
+  {
+    "word": "Gabriel Heinze",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Crespo"
+  },
+  {
+    "word": "Kily González",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Rosario"
+  },
+  {
+    "word": "Claudio Husain",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "San Justo"
+  },
+  {
+    "word": "Luciano Galletti",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Mar del Plata"
+  },
+  {
+    "word": "Javier Saviola",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Buenos Aires"
+  },
+  {
+    "word": "Andrés D'Alessandro",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Buenos Aires"
+  },
+  {
+    "word": "Lucas Ocampos",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Quilmes"
+  },
+  {
+    "word": "Ángel Correa",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Rosario"
+  },
+  {
+    "word": "Joaquín Correa",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Juan Bautista Alberdi"
+  },
+  {
+    "word": "Exequiel Palacios",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Famaillá"
+  },
+  {
+    "word": "Guido Rodríguez",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Sáenz Peña"
+  },
+  {
+    "word": "Thiago Almada",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Fuerte Apache"
+  },
+  {
+    "word": "Facundo Buonanotte",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Pérez"
+  },
+  {
+    "word": "Valentín Carboni",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Buenos Aires"
+  },
+  {
+    "word": "Valentín Barco",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Veinticinco de Mayo"
+  },
+  {
+    "word": "Claudio Echeverri",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Resistencia"
+  },
+  {
+    "word": "Alan Varela",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Isidro Casanova"
+  },
+  {
+    "word": "Mateo Retegui",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "San Fernando"
+  },
+  {
+    "word": "Ezequiel Fernández",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "San Miguel"
+  },
+  {
+    "word": "Lucas Martínez Quarta",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Mar del Plata"
+  },
+  {
+    "word": "Germán Pezzella",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Bahía Blanca"
+  },
+  {
+    "word": "Marcos Senesi",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Concordia"
+  },
+  {
+    "word": "Nehuén Pérez",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Hurlingham"
+  },
+  {
+    "word": "Walter Benítez",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "General San Martín"
+  },
+  {
+    "word": "Juan Musso",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "San Nicolás"
+  },
+  {
+    "word": "Agustín Marchesín",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "San Cayetano"
+  },
+  {
+    "word": "Sergio Romero",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Bernardo de Irigoyen"
+  },
+  {
+    "word": "Willy Caballero",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Santa Elena"
+  },
+  {
+    "word": "Mariano Andújar",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Villa Lugano"
+  },
+  {
+    "word": "Nahuel Guzmán",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Rosario"
+  },
+  {
+    "word": "Pelé",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Tres Corações"
+  },
+  {
+    "word": "Ronaldo Nazário",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Bento Ribeiro"
+  },
+  {
+    "word": "Ronaldinho",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Porto Alegre"
+  },
+  {
+    "word": "Neymar Jr",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Mogi das Cruzes"
+  },
+  {
+    "word": "Kaká",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Gama"
+  },
+  {
+    "word": "Romário",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Río de Janeiro"
+  },
+  {
+    "word": "Rivaldo",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Paulista"
+  },
+  {
+    "word": "Roberto Carlos",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Garça"
+  },
+  {
+    "word": "Cafu",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "São Paulo"
+  },
+  {
+    "word": "Zico",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Río de Janeiro"
+  },
+  {
+    "word": "Sócrates",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Belém"
+  },
+  {
+    "word": "Garrincha",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Pau Grande"
+  },
+  {
+    "word": "Jairzinho",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Río de Janeiro"
+  },
+  {
+    "word": "Bebeto",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Salvador"
+  },
+  {
+    "word": "Dunga",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Ijuí"
+  },
+  {
+    "word": "Taffarel",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Santa Rosa"
+  },
+  {
+    "word": "Dida",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Irará"
+  },
+  {
+    "word": "Júlio César",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Duque de Caxias"
+  },
+  {
+    "word": "Alisson Becker",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Novo Hamburgo"
+  },
+  {
+    "word": "Ederson",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Osasco"
+  },
+  {
+    "word": "Vinícius Jr",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "São Gonçalo"
+  },
+  {
+    "word": "Rodrygo",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Osasco"
+  },
+  {
+    "word": "Endrick",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Taguatinga"
+  },
+  {
+    "word": "Casemiro",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "São José dos Campos"
+  },
+  {
+    "word": "Fabinho",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Campinas"
+  },
+  {
+    "word": "Thiago Silva",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Río de Janeiro"
+  },
+  {
+    "word": "Marquinhos",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "São Paulo"
+  },
+  {
+    "word": "Gabriel Jesus",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "São Paulo"
+  },
+  {
+    "word": "Richarlison",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Nova Venécia"
+  },
+  {
+    "word": "Raphinha",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Porto Alegre"
+  },
+  {
+    "word": "Lucas Paquetá",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Isla de Paquetá"
+  },
+  {
+    "word": "Bruno Guimarães",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Río de Janeiro"
+  },
+  {
+    "word": "Douglas Costa",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Sapucaia do Sul"
+  },
+  {
+    "word": "Willian",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Ribeirão Pires"
+  },
+  {
+    "word": "Philippe Coutinho",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Río de Janeiro"
+  },
+  {
+    "word": "Oscar",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Santa Bárbara d'Oeste"
+  },
+  {
+    "word": "Dani Alves",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Juazeiro"
+  },
+  {
+    "word": "Marcelo",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Río de Janeiro"
+  },
+  {
+    "word": "Felipe Melo",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Volta Redonda"
+  },
+  {
+    "word": "Alexandre Pato",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Pato Branco"
+  },
+  {
+    "word": "Adriano Leite",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Vila Cruzeiro"
+  },
+  {
+    "word": "Robinho",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "São Vicente"
+  },
+  {
+    "word": "Juninho Pernambucano",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Recife"
+  },
+  {
+    "word": "Lucio",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Brasilia"
+  },
+  {
+    "word": "Juan",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Río de Janeiro"
+  },
+  {
+    "word": "Maicon",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Novo Hamburgo"
+  },
+  {
+    "word": "David Luiz",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Diadema"
+  },
+  {
+    "word": "Hulk",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Campina Grande"
+  },
+  {
+    "word": "Gabriel Martinelli",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Guarulhos"
+  },
+  {
+    "word": "Antony",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Osasco"
+  },
+  {
+    "word": "Cristiano Ronaldo",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Funchal"
+  },
+  {
+    "word": "Luís Figo",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Almada"
+  },
+  {
+    "word": "Eusébio",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Lourenço Marques"
+  },
+  {
+    "word": "Bernardo Silva",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Lisboa"
+  },
+  {
+    "word": "Bruno Fernandes",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Maia"
+  },
+  {
+    "word": "Rúben Dias",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Amadora"
+  },
+  {
+    "word": "João Félix",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Viseu"
+  },
+  {
+    "word": "Rafael Leão",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Almada"
+  },
+  {
+    "word": "Pepe",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Maceió"
+  },
+  {
+    "word": "Deco",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "São Bernardo do Campo"
+  },
+  {
+    "word": "Ricardo Carvalho",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Amarante"
+  },
+  {
+    "word": "Rui Costa",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Amadora"
+  },
+  {
+    "word": "Nani",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Amadora"
+  },
+  {
+    "word": "João Cancelo",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Barreiro"
+  },
+  {
+    "word": "Diogo Jota",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Massarelos"
+  },
+  {
+    "word": "Vitinha",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Santo Tirso"
+  },
+  {
+    "word": "Andrés Iniesta",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Fuentealbilla"
+  },
+  {
+    "word": "Xavi Hernández",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Terrassa"
+  },
+  {
+    "word": "Sergio Busquets",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Badia del Vallès"
+  },
+  {
+    "word": "Sergio Ramos",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Camas"
+  },
+  {
+    "word": "Iker Casillas",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Móstoles"
+  },
+  {
+    "word": "Carles Puyol",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Pobla de Segur"
+  },
+  {
+    "word": "Gerard Piqué",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Barcelona"
+  },
+  {
+    "word": "David Villa",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Tuilla"
+  },
+  {
+    "word": "Fernando Torres",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Fuenlabrada"
+  },
+  {
+    "word": "Raúl González",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Madrid"
+  },
+  {
+    "word": "Xabi Alonso",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Tolosa"
+  },
+  {
+    "word": "David Silva",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Arguineguín"
+  },
+  {
+    "word": "Cesc Fàbregas",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Arenys de Mar"
+  },
+  {
+    "word": "Rodri",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Madrid"
+  },
+  {
+    "word": "Pedri",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Tegueste"
+  },
+  {
+    "word": "Gavi",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Los Palacios"
+  },
+  {
+    "word": "Lamine Yamal",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Mataró"
+  },
+  {
+    "word": "Nico Williams",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Pamplona"
+  },
+  {
+    "word": "Dani Carvajal",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Leganés"
+  },
+  {
+    "word": "Jordi Alba",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "L'Hospitalet"
+  },
+  {
+    "word": "Álvaro Morata",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Madrid"
+  },
+  {
+    "word": "Ferran Torres",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Foios"
+  },
+  {
+    "word": "Marco Asensio",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Palma de Mallorca"
+  },
+  {
+    "word": "Guti",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Torrejón de Ardoz"
+  },
+  {
+    "word": "Fernando Hierro",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Vélez-Málaga"
+  },
+  {
+    "word": "Pep Guardiola",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Santpedor"
+  },
+  {
+    "word": "Emilio Butragueño",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Madrid"
+  },
+  {
+    "word": "Kylian Mbappé",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Bondy"
+  },
+  {
+    "word": "Zinedine Zidane",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Marsella"
+  },
+  {
+    "word": "Thierry Henry",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Les Ulis"
+  },
+  {
+    "word": "Michel Platini",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Jœuf"
+  },
+  {
+    "word": "Karim Benzema",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Lyon"
+  },
+  {
+    "word": "Antoine Griezmann",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Mâcon"
+  },
+  {
+    "word": "Paul Pogba",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Lagny-sur-Marne"
+  },
+  {
+    "word": "N'Golo Kanté",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "París"
+  },
+  {
+    "word": "Hugo Lloris",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Niza"
+  },
+  {
+    "word": "Franck Ribéry",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Boulogne-sur-Mer"
+  },
+  {
+    "word": "Patrick Vieira",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Dakar"
+  },
+  {
+    "word": "David Trezeguet",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Ruan"
+  },
+  {
+    "word": "Eric Cantona",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Marsella"
+  },
+  {
+    "word": "Ousmane Dembélé",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Vernon"
+  },
+  {
+    "word": "Aurélien Tchouaméni",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Ruan"
+  },
+  {
+    "word": "Eduardo Camavinga",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Cabinda"
+  },
+  {
+    "word": "Theo Hernández",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Marsella"
+  },
+  {
+    "word": "William Saliba",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Bondy"
+  },
+  {
+    "word": "Mike Maignan",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Cayena"
+  },
+  {
+    "word": "Paolo Maldini",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Milán"
+  },
+  {
+    "word": "Gianluigi Buffon",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Carrara"
+  },
+  {
+    "word": "Andrea Pirlo",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Flero"
+  },
+  {
+    "word": "Francesco Totti",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Roma"
+  },
+  {
+    "word": "Alessandro Del Piero",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Conegliano"
+  },
+  {
+    "word": "Fabio Cannavaro",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Nápoles"
+  },
+  {
+    "word": "Roberto Baggio",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Caldogno"
+  },
+  {
+    "word": "Filippo Inzaghi",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Piacenza"
+  },
+  {
+    "word": "Gennaro Gattuso",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Corigliano Calabro"
+  },
+  {
+    "word": "Alessandro Nesta",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Roma"
+  },
+  {
+    "word": "Giorgio Chiellini",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Pisa"
+  },
+  {
+    "word": "Leonardo Bonucci",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Viterbo"
+  },
+  {
+    "word": "Marco Verratti",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Pescara"
+  },
+  {
+    "word": "Nicolò Barella",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Cagliari"
+  },
+  {
+    "word": "Federico Chiesa",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Génova"
+  },
+  {
+    "word": "Gianluigi Donnarumma",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Castellammare di Stabia"
+  },
+  {
+    "word": "Manuel Neuer",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Gelsenkirchen"
+  },
+  {
+    "word": "Thomas Müller",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Weilheim"
+  },
+  {
+    "word": "Toni Kroos",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Greifswald"
+  },
+  {
+    "word": "Bastian Schweinsteiger",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Kolbermoor"
+  },
+  {
+    "word": "Philipp Lahm",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Múnich"
+  },
+  {
+    "word": "Mesut Özil",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Gelsenkirchen"
+  },
+  {
+    "word": "Miroslav Klose",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Opole"
+  },
+  {
+    "word": "Michael Ballack",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Görlitz"
+  },
+  {
+    "word": "Oliver Kahn",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Karlsruhe"
+  },
+  {
+    "word": "Franz Beckenbauer",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Múnich"
+  },
+  {
+    "word": "Gerd Müller",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Nördlingen"
+  },
+  {
+    "word": "Lothar Matthäus",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Erlangen"
+  },
+  {
+    "word": "Joshua Kimmich",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Rottweil"
+  },
+  {
+    "word": "Jamal Musiala",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Stuttgart"
+  },
+  {
+    "word": "Florian Wirtz",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Pulheim"
+  },
+  {
+    "word": "Leroy Sané",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Essen"
+  },
+  {
+    "word": "Ilkay Gündogan",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Gelsenkirchen"
+  },
+  {
+    "word": "Marc-André ter Stegen",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Mönchengladbach"
+  },
+  {
+    "word": "Harry Kane",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Walthamstow"
+  },
+  {
+    "word": "Jude Bellingham",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Stourbridge"
+  },
+  {
+    "word": "Wayne Rooney",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Croxteth"
+  },
+  {
+    "word": "David Beckham",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Leytonstone"
+  },
+  {
+    "word": "Steven Gerrard",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Whiston"
+  },
+  {
+    "word": "Frank Lampard",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Romford"
+  },
+  {
+    "word": "Paul Scholes",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Salford"
+  },
+  {
+    "word": "Rio Ferdinand",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Camberwell"
+  },
+  {
+    "word": "John Terry",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Barking"
+  },
+  {
+    "word": "Michael Owen",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Chester"
+  },
+  {
+    "word": "Alan Shearer",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Newcastle"
+  },
+  {
+    "word": "Phil Foden",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Stockport"
+  },
+  {
+    "word": "Bukayo Saka",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Ealing"
+  },
+  {
+    "word": "Declan Rice",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Kingston upon Thames"
+  },
+  {
+    "word": "Marcus Rashford",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Mánchester"
+  },
+  {
+    "word": "Jack Grealish",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Birmingham"
+  },
+  {
+    "word": "Trent Alexander-Arnold",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Liverpool"
+  },
+  {
+    "word": "Kyle Walker",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Sheffield"
+  },
+  {
+    "word": "Jordan Pickford",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Washington"
+  },
+  {
+    "word": "Luka Modric",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Zadar"
+  },
+  {
+    "word": "Erling Haaland",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Leeds"
+  },
+  {
+    "word": "Kevin De Bruyne",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Gante"
+  },
+  {
+    "word": "Robert Lewandowski",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Varsovia"
+  },
+  {
+    "word": "Virgil van Dijk",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Breda"
+  },
+  {
+    "word": "Luis Suárez",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Salto"
+  },
+  {
+    "word": "Edinson Cavani",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Salto"
+  },
+  {
+    "word": "Diego Forlán",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Montevideo"
+  },
+  {
+    "word": "Federico Valverde",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Montevideo"
+  },
+  {
+    "word": "Darwin Núñez",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Artigas"
+  },
+  {
+    "word": "Diego Godín",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Rosario (Uruguay)"
+  },
+  {
+    "word": "Enzo Francescoli",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Montevideo"
+  },
+  {
+    "word": "Álvaro Recoba",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Montevideo"
+  },
+  {
+    "word": "Zlatan Ibrahimović",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Malmö"
+  },
+  {
+    "word": "Mohamed Salah",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Nagrig"
+  },
+  {
+    "word": "Sadio Mané",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Bambali"
+  },
+  {
+    "word": "Son Heung-min",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Chuncheon"
+  },
+  {
+    "word": "Victor Osimhen",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Lagos"
+  },
+  {
+    "word": "Riyad Mahrez",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Sarcelles"
+  },
+  {
+    "word": "Achraf Hakimi",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Getafe"
+  },
+  {
+    "word": "Alphonso Davies",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Buduburam"
+  },
+  {
+    "word": "Christian Pulisic",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Hershey"
+  },
+  {
+    "word": "Keylor Navas",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Pérez Zeledón"
+  },
+  {
+    "word": "Radamel Falcao",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Santa Marta"
+  },
+  {
+    "word": "James Rodríguez",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Cúcuta"
+  },
+  {
+    "word": "Carlos Valderrama",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Santa Marta"
+  },
+  {
+    "word": "Faustino Asprilla",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Tuluá"
+  },
+  {
+    "word": "Luis Díaz",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Barrancas"
+  },
+  {
+    "word": "Alexis Sánchez",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Tocopilla"
+  },
+  {
+    "word": "Arturo Vidal",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "San Joaquín"
+  },
+  {
+    "word": "Claudio Bravo",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Viluco"
+  },
+  {
+    "word": "Iván Zamorano",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Santiago de Chile"
+  },
+  {
+    "word": "Marcelo Salas",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Temuco"
+  },
+  {
+    "word": "Paolo Guerrero",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Lima"
+  },
+  {
+    "word": "Claudio Pizarro",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Callao"
+  },
+  {
+    "word": "Teófilo Cubillas",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Lima"
+  },
+  {
+    "word": "Antonio Valencia",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Nueva Loja"
+  },
+  {
+    "word": "Moisés Caicedo",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Santo Domingo"
+  },
+  {
+    "word": "Enner Valencia",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "San Lorenzo (Ecuador)"
+  },
+  {
+    "word": "Salomón Rondón",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Caracas"
+  },
+  {
+    "word": "Juan Arango",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Maracay"
+  },
+  {
+    "word": "Roque Santa Cruz",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Luque"
+  },
+  {
+    "word": "José Luis Chilavert",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Luque"
+  },
+  {
+    "word": "Oscar Cardozo",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Campo 9"
+  },
+  {
+    "word": "Miguel Almirón",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Asunción"
+  },
+  {
+    "word": "Gareth Bale",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Cardiff"
+  },
+  {
+    "word": "Ryan Giggs",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Cardiff"
+  },
+  {
+    "word": "George Best",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Belfast"
+  },
+  {
+    "word": "Kenny Dalglish",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Glasgow"
+  },
+  {
+    "word": "Andrew Robertson",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Glasgow"
+  },
+  {
+    "word": "Petr Cech",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Pilsen"
+  },
+  {
+    "word": "Pavel Nedved",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Cheb"
+  },
+  {
+    "word": "Andriy Shevchenko",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Dvirkivshchyna"
+  },
+  {
+    "word": "Henrikh Mkhitaryan",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Ereván"
+  },
+  {
+    "word": "Jan Oblak",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Skofja Loka"
+  },
+  {
+    "word": "Hakan Çalhanoglu",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Mannheim"
+  },
+  {
+    "word": "Arda Güler",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Altindag"
+  },
+  {
+    "word": "Khvicha Kvaratskhelia",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Tiflis"
+  },
+  {
+    "word": "Dominik Szoboszlai",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Székesfehérvár"
+  },
+  {
+    "word": "David Alaba",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Viena"
+  },
+  {
+    "word": "Xherdan Shaqiri",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Gnjilane"
+  },
+  {
+    "word": "Granit Xhaka",
+    "category": "Jugadores de Fútbol",
+    "contextClue": "Basilea"
+  }
+]
