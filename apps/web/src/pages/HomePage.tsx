@@ -31,7 +31,7 @@ export const HomePage: React.FC = () => {
         </h1>
 
         <p className="text-zinc-400 text-sm sm:text-base max-w-lg mx-auto leading-relaxed">
-          Todos reciben la misma palabra secreta... excepto los impostores. Da pistas sutiles,
+          Todos reciben la misma palabra secreta... excepto los impostores. Decí palabras sutiles,
           descubrí las miradas sospechosas y votá antes de que te engañen.
         </p>
       </div>
@@ -144,9 +144,9 @@ export const HomePage: React.FC = () => {
                   2
                 </div>
                 <div>
-                  <h4 className="font-bold text-white mb-0.5">Ronda de Pistas</h4>
+                  <h4 className="font-bold text-white mb-0.5">Ronda de Palabras</h4>
                   <p className="text-zinc-400">
-                    Por turnos, cada jugador dice una pista breve relacionada con la palabra secreta sin revelarla. Los impostores deben improvisar y disimular.
+                    Por turnos, cada jugador dice o escribe una sola palabra relacionada con su palabra secreta sin revelarla. Los impostores deben improvisar y disimular.
                   </p>
                 </div>
               </div>

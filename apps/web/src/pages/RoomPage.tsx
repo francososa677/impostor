@@ -10,6 +10,7 @@ import { ChatDrawer } from "../components/ChatDrawer.js";
 import { ClueHistoryModal } from "../components/ClueHistoryModal.js";
 import { LiveCluesBoard } from "../components/LiveCluesBoard.js";
 import { ConfettiEffect } from "../components/ConfettiEffect.js";
+import { SingleDeviceGame, SingleDeviceConfig } from "../components/SingleDeviceGame.js";
 import {
   Users,
   Shield,
@@ -59,17 +60,61 @@ export const RoomPage: React.FC = () => {
   const [resetScoresOnRematch, setResetScoresOnRematch] = useState(false);
   const [loading, setLoading] = useState(false);
 
-  // Single-device state tracker
-  const [passDeviceRevealed, setPassDeviceRevealed] = useState(false);
-
   const navigate = useNavigate();
+
+  // If this is a single-device local session or local room, render SingleDeviceGame
+  const singleDeviceSessionRaw = sessionStorage.getItem("impostor_single_device_session");
+  if (code === "local" || (!roomState && singleDeviceSessionRaw)) {
+    let parsedConfig: SingleDeviceConfig = {
+      playerNames: ["Jugador 1", "Jugador 2", "Jugador 3"],
+      selectedCategories: ["objects", "food", "football_players", "movies", "series", "videogames"],
+      impostorCount: 1,
+      impostorGetsClue: true,
+      clueDeliveryMode: "oral",
+      clueTimerSeconds: 30,
+      discussionTimerSeconds: 60,
+    };
+    try {
+      if (singleDeviceSessionRaw) {
+        parsedConfig = JSON.parse(singleDeviceSessionRaw);
+      }
+    } catch {}
+
+    return (
+      <SingleDeviceGame
+        initialConfig={parsedConfig}
+        onExit={() => {
+          sessionStorage.removeItem("impostor_single_device_session");
+          navigate("/create");
+        }}
+      />
+    );
+  }
+
+  // If room is single-device mode from backend, also render SingleDeviceGame
+  if (roomState?.settings.mode === "single-device") {
+    return (
+      <SingleDeviceGame
+        initialConfig={{
+          playerNames: roomState.players.map((p) => p.nickname),
+          selectedCategories: roomState.settings.selectedCategories,
+          impostorCount: roomState.settings.impostorCount,
+          impostorGetsClue: roomState.settings.impostorGetsClue,
+          clueDeliveryMode: roomState.settings.clueDeliveryMode,
+          clueTimerSeconds: roomState.settings.clueTimerSeconds,
+          discussionTimerSeconds: roomState.settings.discussionTimerSeconds,
+        }}
+        onExit={() => navigate("/")}
+      />
+    );
+  }
 
   // If no room state or disconnected, redirect or wait
   useEffect(() => {
-    if (!roomState && !sessionStorage.getItem("impostor_room_code")) {
+    if (code !== "local" && !roomState && !sessionStorage.getItem("impostor_room_code") && !sessionStorage.getItem("impostor_single_device_session")) {
       navigate("/");
     }
-  }, [roomState, navigate]);
+  }, [code, roomState, navigate]);
 
   if (!roomState) {
     return (
@@ -224,7 +269,7 @@ export const RoomPage: React.FC = () => {
                   )}
                 >
                   <div className="flex items-center gap-3">
-                    <PlayerAvatarView avatar={p.avatar} className="w-10 h-10" />
+                    <PlayerAvatarView name={p.nickname} avatar={p.avatar} className="w-10 h-10 text-sm" />
                     <div>
                       <div className="flex items-center gap-1.5 font-bold text-sm text-white">
                         <span>{p.nickname}</span>
@@ -297,7 +342,7 @@ export const RoomPage: React.FC = () => {
                   <span className="font-semibold text-crimson-400">{roomState.settings.impostorCount}</span>
                 </div>
                 <div className="flex justify-between py-1 border-b border-white/5">
-                  <span className="text-zinc-500">Pista al Impostor:</span>
+                  <span className="text-zinc-500">Pista de ayuda al Impostor:</span>
                   <span className="font-semibold">
                     {roomState.settings.impostorGetsClue ? "Activada" : "Desactivada"}
                   </span>
@@ -315,7 +360,7 @@ export const RoomPage: React.FC = () => {
                   </span>
                 </div>
                 <div className="flex justify-between py-1 border-b border-white/5">
-                  <span className="text-zinc-500">Temporizador de Pista:</span>
+                  <span className="text-zinc-500">Tiempo para tu palabra:</span>
                   <span className="font-semibold">
                     {roomState.settings.clueTimerSeconds ? `${roomState.settings.clueTimerSeconds}s` : "Sin límite"}
                   </span>
@@ -339,139 +384,7 @@ export const RoomPage: React.FC = () => {
   }
 
   // ----------------------------------------------------
-  // RENDER PHASE: SINGLE-DEVICE PASS-AND-PLAY (Presencial)
-  // ----------------------------------------------------
-  if (roomState.settings.mode === "single-device" && phase === "CLUE_PHASE") {
-    const currentTurnPlayer = roomState.players.find((p) => p.id === game.currentTurnPlayerId);
-
-    return (
-      <div className="max-w-md mx-auto px-4 py-8 min-h-[calc(100vh-80px)] flex flex-col justify-center">
-        <GlassCard glow className="p-8 text-center space-y-6 animate-fade-in">
-          {!passDeviceRevealed ? (
-            <>
-              <div className="w-16 h-16 rounded-full bg-crimson-600/20 border border-crimson-500/40 text-crimson-400 flex items-center justify-center mx-auto shadow-xl">
-                <EyeOff className="w-8 h-8 animate-pulse" />
-              </div>
-
-              <div>
-                <span className="text-xs text-zinc-500 uppercase tracking-widest font-bold">
-                  Pasá el dispositivo a:
-                </span>
-                <h2 className="font-heading font-black text-3xl text-white mt-1">
-                  {currentTurnPlayer?.nickname || "Siguiente Jugador"}
-                </h2>
-                <p className="text-xs text-zinc-400 mt-2">
-                  Que el resto del grupo no mire la pantalla antes de continuar.
-                </p>
-              </div>
-
-              <Button
-                variant="primary"
-                size="lg"
-                className="w-full py-4 text-base"
-                onClick={() => setPassDeviceRevealed(true)}
-              >
-                Soy {currentTurnPlayer?.nickname}, Ver Mi Información
-              </Button>
-            </>
-          ) : (
-            <>
-              <div className="w-16 h-16 rounded-full bg-crimson-950/60 border border-crimson-500/30 text-crimson-400 flex items-center justify-center mx-auto shadow-xl">
-                <Eye className="w-8 h-8" />
-              </div>
-
-              {/* Private Info for Current Player */}
-              {privateState?.role === "impostor" ? (
-                <div className="space-y-3">
-                  <div className="inline-block px-4 py-1.5 rounded-full bg-red-600 text-white font-black text-sm uppercase tracking-widest animate-bounce">
-                    ¡Sos el Impostor!
-                  </div>
-                  <p className="text-xs text-zinc-400">
-                    No tenés la palabra secreta. Intentá descubrirla y disimular.
-                  </p>
-                  {privateState.contextClue && (
-                    <div className="p-3 rounded-xl bg-dark-900 border border-white/10 text-xs">
-                      <span className="text-zinc-500 block mb-0.5">Pista Contextual:</span>
-                      <span className="font-bold text-crimson-300 text-sm">
-                        {privateState.contextClue}
-                      </span>
-                    </div>
-                  )}
-                </div>
-              ) : (
-                <div className="space-y-3">
-                  <div className="text-xs text-zinc-500 uppercase font-semibold">
-                    Categoría: {privateState?.category}
-                  </div>
-                  <div className="text-xs text-zinc-400">Tu palabra secreta es:</div>
-                  <div className="font-heading font-black text-4xl text-crimson-400 tracking-wider">
-                    {privateState?.secretWord}
-                  </div>
-                </div>
-              )}
-
-              {/* Clue form if written mode */}
-              {roomState.settings.clueDeliveryMode === "written" && (
-                <form onSubmit={handleClueSubmit} className="space-y-3 pt-4 border-t border-white/5">
-                  <input
-                    type="text"
-                    required
-                    value={clueText}
-                    onChange={(e) => setClueText(e.target.value)}
-                    placeholder="Escribí tu pista..."
-                    className="w-full px-4 py-2.5 rounded-xl bg-dark-900 border border-white/10 text-white text-sm"
-                  />
-                  <Button type="submit" variant="primary" size="md" className="w-full">
-                    Confirmar Pista y Pasar
-                  </Button>
-                </form>
-              )}
-
-              {/* Pass button if oral mode */}
-              {roomState.settings.clueDeliveryMode === "oral" && (
-                <Button
-                  variant="primary"
-                  size="lg"
-                  className="w-full"
-                  onClick={async () => {
-                    await submitClue("Pista dicha oralmente");
-                    setPassDeviceRevealed(false);
-                  }}
-                >
-                  Ya di mi pista oral, Ocultar y Pasar
-                </Button>
-              )}
-
-              {/* Vote to change word in Round 1 (Single Device) */}
-              {game.round === 1 && (
-                <div className="pt-3 border-t border-white/5 flex flex-col items-center gap-1.5">
-                  <button
-                    type="button"
-                    onClick={handleVoteChangeWord}
-                    className={clsx(
-                      "px-3.5 py-2 rounded-xl text-xs font-semibold flex items-center gap-2 border transition-all shadow-md",
-                      privateState?.hasVotedChangeWord
-                        ? "bg-amber-600 text-white border-amber-400 shadow-amber-950/40"
-                        : "bg-dark-900 text-zinc-300 border-white/10 hover:border-white/20 hover:text-white"
-                    )}
-                  >
-                    <RotateCcw className="w-3.5 h-3.5 text-amber-400" />
-                    <span>
-                      {privateState?.hasVotedChangeWord ? "Votaste cambiar palabra" : "Votar para cambiar palabra"} ({game.changeWordVotes?.length || 0}/{game.changeWordVotesNeeded || Math.ceil(roomState.players.length / 2)})
-                    </span>
-                  </button>
-                  <span className="text-[10px] text-zinc-500">
-                    Discreto: si la mayoría vota, se sortea otra palabra sin cambiar los roles.
-                  </span>
-                </div>
-              )}
-            </>
-          )}
-        </GlassCard>
-      </div>
-    );
-  }
-
+  // RENDER PHASE: GAMEPLAY (Virtual & Multi-Device)
   // ----------------------------------------------------
   // RENDER PHASE: GAMEPLAY (Virtual & Multi-Device)
   // ----------------------------------------------------
@@ -535,7 +448,7 @@ export const RoomPage: React.FC = () => {
                     ¡SOS EL IMPOSTOR!
                   </div>
                   <p className="text-xs text-zinc-400">
-                    No recibiste la palabra. Dedúcela a partir de las pistas de los demás.
+                    No recibiste la palabra. Dedúcela a partir de las palabras que digan los demás.
                   </p>
                   {privateState.category && (
                     <div className="text-xs text-zinc-400 mt-2">
@@ -619,7 +532,7 @@ export const RoomPage: React.FC = () => {
           <GlassCard className="p-6 space-y-4">
             <div className="flex items-center justify-between">
               <div className="flex items-center gap-3">
-                <PlayerAvatarView avatar={currentTurnPlayer?.avatar || "detective-1"} className="w-10 h-10" />
+                <PlayerAvatarView name={currentTurnPlayer?.nickname} avatar={currentTurnPlayer?.avatar || "detective-1"} className="w-10 h-10 text-sm" />
                 <div>
                   <span className="text-xs text-zinc-500 uppercase tracking-wider">Turno Actual:</span>
                   <h3 className="font-heading font-bold text-lg text-white">
@@ -649,7 +562,7 @@ export const RoomPage: React.FC = () => {
                         : "bg-dark-850 text-zinc-300 border border-white/10"
                     )}
                   >
-                    <PlayerAvatarView avatar={p.avatar} className="w-4 h-4" />
+                    <PlayerAvatarView name={p.nickname} avatar={p.avatar} className="w-4 h-4 text-[9px]" />
                     {p.nickname} {hasGiven && "✓"}
                   </span>
                 );
@@ -665,12 +578,12 @@ export const RoomPage: React.FC = () => {
                     required
                     value={clueText}
                     onChange={(e) => setClueText(e.target.value)}
-                    placeholder="Escribí una palabra o pista breve..."
+                    placeholder="Escribí tu palabra..."
                     maxLength={100}
                     className="flex-1 px-4 py-3 rounded-xl bg-dark-900 border border-white/10 text-white text-sm focus:outline-none focus:border-crimson-500"
                   />
                   <Button type="submit" variant="primary" size="md" icon={<Send className="w-4 h-4" />}>
-                    Enviar Pista
+                    Enviar Palabra
                   </Button>
                 </div>
                 <div className="flex justify-end">
@@ -709,7 +622,7 @@ export const RoomPage: React.FC = () => {
                 <div>
                   <h2 className="font-heading font-black text-xl sm:text-2xl text-white">Fase de Discusión</h2>
                   <p className="text-xs text-zinc-400">
-                    Debatan quién sospechan que es el impostor analizando las pistas dadas.
+                    Debatan quién sospechan que es el impostor analizando las palabras dichas.
                   </p>
                 </div>
               </div>
@@ -788,7 +701,7 @@ export const RoomPage: React.FC = () => {
                   >
                     <div className="flex items-center justify-between w-full">
                       <div className="flex items-center gap-3">
-                        <PlayerAvatarView avatar={target.avatar} className="w-10 h-10" />
+                        <PlayerAvatarView name={target.nickname} avatar={target.avatar} className="w-10 h-10 text-sm" />
                         <div>
                           <div className="font-bold text-sm text-white">
                             {target.nickname} {isSelf && "(Tú)"}
@@ -804,12 +717,12 @@ export const RoomPage: React.FC = () => {
                     {/* Latest clue given by this suspect */}
                     {latestClue ? (
                       <div className="w-full mt-1 px-2.5 py-1 rounded-lg bg-dark-950/60 border border-white/5 text-xs flex items-center justify-between gap-1">
-                        <span className="text-[10px] text-zinc-400">Pista R{latestClue.round}:</span>
+                        <span className="text-[10px] text-zinc-400">Palabra R{latestClue.round}:</span>
                         <span className="font-bold text-crimson-300 truncate">"{latestClue.text}"</span>
                       </div>
                     ) : (
                       <div className="w-full mt-1 text-[10px] text-zinc-500 italic">
-                        Sin pistas registradas
+                        Sin palabras registradas
                       </div>
                     )}
                   </button>
@@ -989,7 +902,7 @@ export const RoomPage: React.FC = () => {
                       <tr key={sc.playerId} className="hover:bg-white/5 transition-colors">
                         <td className="py-3 flex items-center gap-2 font-bold text-white">
                           <span className="text-zinc-500 font-mono w-4">{rank + 1}.</span>
-                          <PlayerAvatarView avatar={sc.avatar} className="w-6 h-6" />
+                          <PlayerAvatarView name={sc.nickname} avatar={sc.avatar} className="w-6 h-6 text-[10px]" />
                           <span>{sc.nickname}</span>
                         </td>
                         <td className="py-3 text-center text-zinc-300">{sc.wins}</td>

@@ -4,6 +4,7 @@ import { useGame } from "../context/GameContext.js";
 import { GlassCard } from "../components/GlassCard.js";
 import { Button } from "../components/Button.js";
 import { RoomSummary } from "@impostor/shared";
+import { PlayerAvatarView } from "../components/AvatarPicker.js";
 import {
   Search,
   Users,
@@ -245,15 +246,18 @@ export const LobbyPage: React.FC = () => {
                 <label className="block text-xs font-semibold text-zinc-300 uppercase tracking-wider mb-1.5">
                   Tu Apodo
                 </label>
-                <input
-                  type="text"
-                  required
-                  value={joinNickname}
-                  onChange={(e) => setJoinNickname(e.target.value)}
-                  placeholder="Tu apodo"
-                  maxLength={20}
-                  className="w-full px-3 py-2 rounded-xl bg-dark-900 border border-white/10 text-white placeholder-zinc-600 focus:outline-none focus:border-crimson-500"
-                />
+                <div className="flex items-center gap-2.5">
+                  <PlayerAvatarView name={joinNickname || "Tú"} className="w-10 h-10 text-xs" />
+                  <input
+                    type="text"
+                    required
+                    value={joinNickname}
+                    onChange={(e) => setJoinNickname(e.target.value)}
+                    placeholder="Tu apodo"
+                    maxLength={20}
+                    className="flex-1 px-3 py-2 rounded-xl bg-dark-900 border border-white/10 text-white placeholder-zinc-600 focus:outline-none focus:border-crimson-500 text-sm"
+                  />
+                </div>
               </div>
 
               {selectedRoom.hasPassword && (

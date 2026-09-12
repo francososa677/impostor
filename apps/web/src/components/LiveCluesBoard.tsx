@@ -48,10 +48,10 @@ export const LiveCluesBoard: React.FC<LiveCluesBoardProps> = ({
           </div>
           <div>
             <h4 className="font-heading font-bold text-sm text-white tracking-wide">
-              Pistas en Pantalla
+              Palabras en Pantalla
             </h4>
             <span className="text-[11px] text-zinc-400">
-              {currentRoundClues.length} pista{currentRoundClues.length === 1 ? "" : "s"} registrada{currentRoundClues.length === 1 ? "" : "s"}
+              {currentRoundClues.length} palabra{currentRoundClues.length === 1 ? "" : "s"} registrada{currentRoundClues.length === 1 ? "" : "s"}
             </span>
           </div>
         </div>
@@ -83,7 +83,7 @@ export const LiveCluesBoard: React.FC<LiveCluesBoardProps> = ({
         <div className="text-center py-6 px-4 rounded-xl bg-dark-950/40 border border-dashed border-white/10">
           <Clock className="w-6 h-6 text-zinc-500 mx-auto mb-1.5 animate-pulse" />
           <p className="text-xs text-zinc-400 font-medium">
-            Esperando que los jugadores escriban sus pistas...
+            Esperando que los jugadores digan o escriban sus palabras...
           </p>
         </div>
       ) : (
@@ -104,7 +104,7 @@ export const LiveCluesBoard: React.FC<LiveCluesBoardProps> = ({
               >
                 {/* Player info */}
                 <div className="flex items-center gap-2.5 min-w-0">
-                  <PlayerAvatarView avatar={player?.avatar || "detective-1"} className="w-8 h-8 shrink-0" />
+                  <PlayerAvatarView name={player?.nickname || c.nickname} avatar={player?.avatar || "detective-1"} className="w-8 h-8 shrink-0" />
                   <div className="min-w-0">
                     <div className="font-bold text-xs text-zinc-200 truncate flex items-center gap-1">
                       <span>{c.nickname}</span>
@@ -114,7 +114,7 @@ export const LiveCluesBoard: React.FC<LiveCluesBoardProps> = ({
                     </div>
                     <span className="text-[10px] text-zinc-500 flex items-center gap-1">
                       <Check className="w-3 h-3 text-emerald-400" />
-                      Pista #{idx + 1}
+                      Palabra #{idx + 1}
                     </span>
                   </div>
                 </div>

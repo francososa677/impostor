@@ -3,14 +3,13 @@ import { useParams, useNavigate } from "react-router-dom";
 import { useGame } from "../context/GameContext.js";
 import { GlassCard } from "../components/GlassCard.js";
 import { Button } from "../components/Button.js";
-import { AvatarPicker } from "../components/AvatarPicker.js";
+import { PlayerAvatarView } from "../components/AvatarPicker.js";
 import { ShieldAlert } from "lucide-react";
 
 export const JoinPage: React.FC = () => {
   const { code } = useParams<{ code: string }>();
   const { joinRoom } = useGame();
   const [nickname, setNickname] = useState(() => localStorage.getItem("impostor_nickname") || "");
-  const [avatar, setAvatar] = useState(() => localStorage.getItem("impostor_avatar") || "detective-1");
   const [loading, setLoading] = useState(false);
   const navigate = useNavigate();
 
@@ -18,8 +17,7 @@ export const JoinPage: React.FC = () => {
 
   useEffect(() => {
     localStorage.setItem("impostor_nickname", nickname);
-    localStorage.setItem("impostor_avatar", avatar);
-  }, [nickname, avatar]);
+  }, [nickname]);
 
   const handleJoin = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -29,7 +27,7 @@ export const JoinPage: React.FC = () => {
     const result = await joinRoom({
       roomCode: cleanCode,
       nickname: nickname.trim(),
-      avatar,
+      avatar: "detective-1",
     });
     setLoading(false);
 
@@ -59,22 +57,18 @@ export const JoinPage: React.FC = () => {
             <label className="block text-xs font-semibold text-zinc-300 uppercase tracking-wider mb-1.5">
               Tu Apodo
             </label>
-            <input
-              type="text"
-              required
-              value={nickname}
-              onChange={(e) => setNickname(e.target.value)}
-              placeholder="Ingresá tu apodo"
-              maxLength={20}
-              className="w-full px-4 py-2.5 rounded-xl bg-dark-900 border border-white/10 text-white placeholder-zinc-600 focus:outline-none focus:border-crimson-500 text-sm"
-            />
-          </div>
-
-          <div>
-            <label className="block text-xs font-semibold text-zinc-300 uppercase tracking-wider mb-2">
-              Elegí tu Avatar
-            </label>
-            <AvatarPicker selectedAvatar={avatar} onSelect={setAvatar} />
+            <div className="flex items-center gap-3">
+              <PlayerAvatarView name={nickname || "Tú"} className="w-11 h-11 text-base font-black" />
+              <input
+                type="text"
+                required
+                value={nickname}
+                onChange={(e) => setNickname(e.target.value)}
+                placeholder="Ingresá tu apodo"
+                maxLength={20}
+                className="flex-1 px-4 py-2.5 rounded-xl bg-dark-900 border border-white/10 text-white placeholder-zinc-600 focus:outline-none focus:border-crimson-500 text-sm"
+              />
+            </div>
           </div>
 
           <Button

@@ -32,15 +32,15 @@ export const ClueHistoryModal: React.FC<ClueHistoryModalProps> = ({ clues, onClo
             <BookOpen className="w-5 h-5" />
           </div>
           <div>
-            <h3 className="font-heading font-bold text-lg text-white">Historial de Pistas</h3>
-            <p className="text-xs text-zinc-400">Pistas dichas en todas las rondas</p>
+            <h3 className="font-heading font-bold text-lg text-white">Historial de Palabras</h3>
+            <p className="text-xs text-zinc-400">Palabras dichas en todas las rondas</p>
           </div>
         </div>
 
         <div className="flex-1 overflow-y-auto space-y-4 pr-1">
           {Object.keys(rounds).length === 0 ? (
             <p className="text-center text-zinc-500 text-sm py-8">
-              Aún no se han dado pistas en esta partida.
+              Aún no se han dicho palabras en esta partida.
             </p>
           ) : (
             Object.entries(rounds).map(([roundNum, roundClues]) => (
@@ -50,7 +50,7 @@ export const ClueHistoryModal: React.FC<ClueHistoryModalProps> = ({ clues, onClo
                     Ronda {roundNum}
                   </span>
                   <span className="text-[10px] text-zinc-500">
-                    {roundClues.length} {roundClues.length === 1 ? "pista" : "pistas"}
+                    {roundClues.length} {roundClues.length === 1 ? "palabra" : "palabras"}
                   </span>
                 </div>
                 <div className="space-y-2">

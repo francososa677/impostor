@@ -19,7 +19,7 @@ export const TimerDisplay: React.FC<TimerDisplayProps> = ({
   const isUrgent = remainingSeconds <= 10 && remainingSeconds > 0;
 
   const typeLabels = {
-    clue: "Pista en curso",
+    clue: "Palabra en curso",
     discussion: "Fase de discusión",
     vote: "Votación activa",
   };

@@ -89,7 +89,7 @@ export const ChatDrawer: React.FC = () => {
             ) : (
               messages.map((msg) => (
                 <div key={msg.id} className="flex items-start gap-2 text-xs animate-fade-in">
-                  <PlayerAvatarView avatar={msg.avatar} className="w-6 h-6 shrink-0 mt-0.5" />
+                  <PlayerAvatarView name={msg.nickname} avatar={msg.avatar} className="w-6 h-6 shrink-0 mt-0.5 text-[9px]" />
                   <div className="flex-1">
                     <div className="flex items-baseline gap-1.5">
                       <span className="font-semibold text-zinc-200">{msg.nickname}</span>
